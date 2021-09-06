@@ -19,10 +19,6 @@ function ImageGallery({ query }) {
   const [modalAlt, setModalAlt] = useState("");
 
   useEffect(() => {
-    setGallery([]);
-  }, [query]);
-
-  useEffect(() => {
     if (query.trim() === "") {
       setStatus("idle");
       return;
